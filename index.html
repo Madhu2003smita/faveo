@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help Desk</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+        <div class="top-bar"><p>My Account | Support | Tel: + 91 80 4729 2860 or + 1 650 360 4607 | WhatsApp Support</p>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                <a href="#"><i class="fa-brands fa-whatsapp"></i></a>	
+            </div>
+        </div>
+
+
+        <div class="header">
+        <div class="header-icons">
+            <img src="https://www.faveohelpdesk.com/wp-content/uploads/2024/02/Faveo-Logo-13.png" 
+            alt="Faveo Helpdesk Software" class="logo_standard"
+            style="height: 70px; 
+            width: 135px;">
+            <div class="menu-items">
+                <a href="https://www.faveohelpdesk.com/online-demo/">Demo</a>
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">Products</button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="#">Help Desk</a>
+                        <a href="#">Service Desk</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">Pricing</button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="#">Faveo Self Hosted</a>
+                        <a href="#">Faveo cloud</a>
+                    </div>
+                </div>
+                <a href="https://www.faveohelpdesk.com/online-services/">Services</a>
+                <a href="https://www.faveohelpdesk.com/online-plugins/">Plugins</a>
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">Resources</button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="#">Case Studies</a>
+                        <a href="#">Customer Stories</a>
+                        <a href="#">Blog</a>
+                        <a href="#">Events</a>
+                    </div>
+                </div>
+                <a href="https://www.faveohelpdesk.com/online-contact us/">Contact Us</a>
+                <button class="signup-button">SIGN UP FOR FREE</button>
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn"><img class="wpml-ls-flag" src="https://www.faveohelpdesk.com/wp-content/plugins/sitepress-multilingual-cms/res/flags/en.png" alt="" width="18" height="12"> English</button>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="#"><img class="wpml-ls-flag" src="https://www.faveohelpdesk.com/wp-content/plugins/sitepress-multilingual-cms/res/flags/fr.png" alt="" width="18" height="12"> French</a>
+                        <a href="#"><img class="wpml-ls-flag" src="https://www.faveohelpdesk.com/wp-content/plugins/sitepress-multilingual-cms/res/flags/es.png" alt="" width="18" height="12"> Spanish</a>
+                        <a href="#"><img class="wpml-ls-flag" src="https://www.faveohelpdesk.com/wp-content/plugins/sitepress-multilingual-cms/res/flags/id.png" alt="" width="18" height="12"> Indonesian</a>
+                        <a href="#"><img class="wpml-ls-flag" src="https://www.faveohelpdesk.com/wp-content/plugins/sitepress-multilingual-cms/res/flags/no.png" alt="" width="18" height="12"> Norwegian Bokmal</a>
+                        <a href="#"><img class="wpml-ls-flag" src="https://www.faveohelpdesk.com/wp-content/plugins/sitepress-multilingual-cms/res/flags/ru.png" alt="" width="18" height="12"> Russian</a>
+                        <a href="#"><img class="wpml-ls-flag" src="https://www.faveohelpdesk.com/wp-content/plugins/sitepress-multilingual-cms/res/flags/pt-pt.png" alt="" width="18" height="12"> Portuguese (Portugal)</a>
+                        <a href="#"><img class="wpml-ls-flag" src="https://www.faveohelpdesk.com/wp-content/plugins/sitepress-multilingual-cms/res/flags/ar.png" alt="" width="18" height="12"> Arabic</a>
+                        <a href="#"><img class="wpml-ls-flag" src="https://www.faveohelpdesk.com/wp-content/plugins/sitepress-multilingual-cms/res/flags/it.png" alt="" width="18" height="12"> Italian</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <!-- <script>
+            function myFunction() {
+              document.getElementById("myDropdown").classList.toggle("show");
+            }
+        
+            window.onclick = function(event) {
+              if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                  var openDropdown = dropdowns[i];
+                  if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                  }
+                }
+              }
+            }
+
+            let currentIndex = 0;
+
+function slideTo(index) {
+  const scrollContent = document.querySelector('.mySlides-fade');
+  const items = document.querySelectorAll('.img');
+  const totalItems = items.length;
+  
+  if (index >= 0 && index < totalItems) {
+    currentIndex = index;
+    const offset = -currentIndex * 100; // assuming each item takes 100% width
+    scrollContent.style.transform = `translateX(${offset}%)`;
+  }
+}
+
+// Example usage: slide to next item
+document.querySelector('.scroll-container').addEventListener('click', () => {
+  slideTo(currentIndex + 1);
+});
+            </script> -->
+           
+<!-- this code taken from original site -->
+
+<div class="layer">
+    <div class="title">
+        <div class="header-items">
+            <h1>POWERFUL, YET SIMPLE SERVICEDESK MANAGEMENT</h1>
+            <p>A comprehensive, self-hosted & cloud-based ITIL/ITSM software that helps organizations of all sizes manage incidents, assets, and more.</p>
+        </div>
+        <div class="button-container">
+            <button class="button signup-button">Free Sign Up &#10095;</button> 
+            <button class="button demo-button">Get a Free Demo</button>
+        </div>
+    </div>
+    <div class="side-img">
+        <img loading="lazy" decoding="async" src="//www.faveohelpdesk.com/wp-content/uploads/2024/01/Mockup-servicedesk.webp" 
+        alt="Faveo servicedesk" class="tp-rs-img rs-lazyload" width="1439" height="808" 
+        data-lazyload="//www.faveohelpdesk.com/wp-content/uploads/2024/01/Mockup-servicedesk.webp" 
+        data-no-retina="" data-reference="//www.faveohelpdesk.com/wp-content/uploads/2024/01/Mockup-servicedesk.webp" 
+        data-src-rs-ref="//www.faveohelpdesk.com/wp-content/uploads/2024/01/Mockup-servicedesk.webp" 
+        >
+    </div>
+</div>
+
+<!-- end -->
+<section class="container">
+<div class="slider-wrapper">
+    <span>
+    <div class="slider">
+        <img id="slide-1" loading="lazy" decoding="async" width="160" height="70" src="https://www.faveohelpdesk.com/wp-content/uploads/2023/10/Financiera-Independencia-1.png" class="attachment-full" alt="Image 1" title="Financiera Independencia">
+        <img id="slide-2" loading="lazy" decoding="async" width="160" height="70" src="https://www.faveohelpdesk.com/wp-content/uploads/2023/08/022-1.png" class="attachment-full" alt="Image 2" title="022-1">
+        <img id="slide-3" loading="lazy" decoding="async" width="160" height="70" src="https://www.faveohelpdesk.com/wp-content/uploads/2024/01/COPART-01-2-_1_-1.webp" class="attachment-full" alt="Image 3" title="COPART-01-2-_1_ (1)">
+        <img id="slide-4" loading="lazy" decoding="async" width="160" height="70" src="https://www.faveohelpdesk.com/wp-content/uploads/2023/08/EBUSCO-01.png" class="attachment-full" alt="Image 4" title="EBUSCO-01">
+        <img id="slide-5" loading="lazy" decoding="async" width="160" height="70" src="https://www.faveohelpdesk.com/wp-content/uploads/2024/01/IIM-Logo-2.png" class="attachment-full" alt="Image 5" title="IIM-Logo (2)">
+        <img id="slide-6" loading="lazy" decoding="async" width="160" height="70" src="https://www.faveohelpdesk.com/wp-content/uploads/2024/01/SILAFRICA-01-1-2.png" class="attachment-full" alt="Image 6" title="SILAFRICA-01-1 (2)">
+        <img id="slide-7" loading="lazy" decoding="async" width="160" height="70" src="https://www.faveohelpdesk.com/wp-content/uploads/2024/01/UNIVERSITY-OF-CHESTER-01-1-_2_-1.webp" class="attachment-full" alt="Image 7" title="UNIVERSITY-OF-CHESTER-01-1-_2_ (1)">
+        <img id="slide-8" loading="lazy" decoding="async" width="160" height="70" src="https://www.faveohelpdesk.com/wp-content/uploads/2023/10/Acib-funin.png" class="attachment-full" alt="Image 8" title="Acib-funin">
+        <img id="slide-9" loading="lazy" decoding="async" width="160" height="70" src="https://www.faveohelpdesk.com/wp-content/uploads/2024/01/Javeriana-_2_-1.webp" class="attachment-full" alt="Image 9" title="Javeriana-_2_ (1)">
+        <img id="slide-10" loading="lazy" decoding="async" width="160" height="60" src="https://www.faveohelpdesk.com/wp-content/uploads/2024/01/KPMG-01-3.png" class="attachment-full" alt="Image 10" title="KPMG-01 (3)">
+        <img id="slide-11" loading="lazy" decoding="async" width="160" height="70" src="https://www.faveohelpdesk.com/wp-content/uploads/2023/10/VODAFONE-01-01.png" class="attachment-full" alt="Image 11" title="VODAFONE-01-01">
+        <img id="slide-12" loading="lazy" decoding="async" width="160" height="70" src="https://www.faveohelpdesk.com/wp-content/uploads/2024/01/Techoware-1-1.png" class="attachment-full" alt="Image 12" title="Techoware-1 (1)">
+        <img id="slide-13" loading="lazy" decoding="async" width="160" height="70" src="https://www.faveohelpdesk.com/wp-content/uploads/2024/01/ANDESON-UNIVERSITY-01-1-1.png" class="attachment-full" alt="Image 13" title="ANDESON-UNIVERSITY-01-1 (1)">
+        <img id="slide-14" loading="lazy" decoding="async" width="160" height="70" src="https://www.faveohelpdesk.com/wp-content/uploads/2024/01/03-1-_2_-1.webp" class="attachment-full" alt="Image 14" title="03-1-_2_ (1)">
+    </div>
+    <div class="slider-nav">
+        <a href="#slide-1"></a>
+        <a href="#slide-2"></a>
+        <a href="#slide-3"></a>
+        <a href="#slide-4"></a>
+        <a href="#slide-5"></a>
+        <a href="#slide-6"></a>
+        <a href="#slide-7"></a>
+        <a href="#slide-8"></a>
+        <a href="#slide-9"></a>
+        <a href="#slide-10"></a>
+        <a href="#slide-11"></a>
+        <a href="#slide-12"></a>
+        <a href="#slide-13"></a>
+        <a href="#slide-14"></a>
+    </div>
+    </span>
+</div>
+</section>
+
+
+<div class="top-items"><p>DISCOVER MORE POWERFUL FEATURES</p>
+    <h3>CONNECT SEAMLESSLY</h3>
+    <h1>OMNI-CHANNEL INTEGRATION</h1>
+    <h6>Connect seamlessly across all channels with our omni-channel integration support software, empowering efficient customer engagement and streamlined support. With Faveo’s Omni-Channel Integration, customers can effortlessly interact with businesses using their preferred communication channels.</h6>
+    <div class="section">
+        <img loading="lazy" decoding="async" width="500" height="450" src="https://www.faveohelpdesk.com/wp-content/uploads/2023/12/Omni-Channel-01-1-1-1-1.png" class="vc_single_image-img attachment-large" alt="" title="Omni Channel-01 (1) (1) (1)" srcset="https://www.faveohelpdesk.com/wp-content/uploads/2023/12/Omni-Channel-01-1-1-1-1.png 500w, https://www.faveohelpdesk.com/wp-content/uploads/2023/12/Omni-Channel-01-1-1-1-1-300x270.png 300w" sizes="(max-width: 500px) 100vw, 500px">
+    </div>
+</div>
+
+
+
+<div class="second-items">
+    <div class="second-img">
+        <img loading="lazy" decoding="async" width="400" height="360" src="https://www.faveohelpdesk.com/wp-content/uploads/2023/12/Affordable_1-removebg-preview-2.png" class="vc_single_image-img attachment-large" alt="" title="Affordable_1-removebg-preview (2)" srcset="https://www.faveohelpdesk.com/wp-content/uploads/2023/12/Affordable_1-removebg-preview-2.png 407w, https://www.faveohelpdesk.com/wp-content/uploads/2023/12/Affordable_1-removebg-preview-2-300x271.png 300w" sizes="(max-width: 407px) 100vw, 407px">
+    </div>
+    <div class="headline">
+       <h3>UNLIMITED AGENTS</h3>
+       <h1>UNLIMITED AND AFFORDABLE</h1>
+       <h6>Unlock unlimited user access at an affordable rate with Faveo, empowering your entire team to deliver exceptional customer support. Faveo’s unlimited and affordable pricing model empowers businesses of all sizes to provide top-notch assistance, leaving both customers and your team satisfied.</h6>
+    </div>
+</div>
+
+
+
+<div class="third-items">
+    <h3>FLEXIBLE</h3>
+    <h1>SELF-HOSTED AND CLOUD BASED</h1>
+    <h6>Choose the flexibility that suits your business – Self-hosted for full control over your data or Cloud version for hassle-free server management, both with Faveo. Tailor the platform to your specific requirements, integrate seamlessly with existing systems, and ensure full compliance with your data policies. Let us handle the technical aspects, while you focus on delivering exceptional customer service.</h6>
+    <div class="third-img">
+        <img loading="lazy" decoding="async" width="420" height="378" src="https://www.faveohelpdesk.com/wp-content/uploads/2024/01/Self-Hosted-1-1.webp" class="vc_single_image-img attachment-large" alt="Self-Hosted" title="Self-Hosted-1 (1)" srcset="https://www.faveohelpdesk.com/wp-content/uploads/2024/01/Self-Hosted-1-1.webp 420w, https://www.faveohelpdesk.com/wp-content/uploads/2024/01/Self-Hosted-1-1-300x270.webp 300w" sizes="(max-width: 420px) 100vw, 420px">
+    </div>
+</div>
+
+
+<div class="fourth-items">
+    <div class="fourth-img">
+        <img loading="lazy" decoding="async" width="570" height="400" src="https://www.faveohelpdesk.com/wp-content/uploads/2024/01/Screenshot_2023-11-23_181811-removebg-preview-_1_-1.webp" class="vc_single_image-img attachment-large" alt="customizable" title="Screenshot_2023-11-23_181811-removebg-preview-_1_ (1)" srcset="https://www.faveohelpdesk.com/wp-content/uploads/2024/01/Screenshot_2023-11-23_181811-removebg-preview-_1_-1.webp 612w, https://www.faveohelpdesk.com/wp-content/uploads/2024/01/Screenshot_2023-11-23_181811-removebg-preview-_1_-1-300x200.webp 300w, https://www.faveohelpdesk.com/wp-content/uploads/2024/01/Screenshot_2023-11-23_181811-removebg-preview-_1_-1-600x400.webp 600w" sizes="(max-width: 612px) 100vw, 612px">
+    </div>
+    <div class="fourth-section">
+    <div class="heading">
+        <h3>TAILOR-MADE TO PERFECTION</h3>
+        <h1>CUSTOMIZABLE</h1>
+        <h6>Customize Faveo to your exact specifications, empowering you with a ticketing tool that perfectly suits your unique requirements. Faveo’s customized software seamlessly integrates with your existing tools and software, amplifying your team’s efficiency and productivity. Enjoy a personalized experience that streamlines your support operations and empowers your agents to deliver exceptional customer service like never before.</h6>
+    </div>
+    <div class="button">
+        <button class="read-more">Read more</button>
+    </div>
+    </div>
+    
+</div>
+
+
+
+
+<div class="faveo">
+    <div class="helpdesk"><h1>5000+ Businesses Can't Be Wrong</h1>
+        <h3>Learn How Faveo Helpdesk</h3>
+        <h4>Can Make Your Customer Happy</h4>
+    </div>
+    <div class="button">
+        <button class="sign up">Sign Up</button>
+    </div> 
+</div>
+
+
+
+<div class="fifth-items">
+    <h3>ELEVATE SUPPORT EXCELLENCE</h3>
+    <h1>Faveo Helpdesk</h1>
+    <h6>Join the ranks of businesses that trust Faveo Helpdesk for a seamless, customizable, and efficient client service solution. Monitor queries, manage SLAs, and generate tailored reports to elevate your support operations. Our software is not just a tool; it’s a partner in your journey towards client satisfaction and operational excellence.</h6>
+    <button class="read-more">Read more</button>
+    <div class="fifth-img">
+        <img loading="lazy" decoding="async" width="500" height="250" src="https://www.faveohelpdesk.com/wp-content/uploads/2023/12/hd.png" class="vc_single_image-img attachment-large" alt="Helpdesk" title="hd" srcset="https://www.faveohelpdesk.com/wp-content/uploads/2023/12/hd.png 1024w, https://www.faveohelpdesk.com/wp-content/uploads/2023/12/hd-300x167.png 300w, https://www.faveohelpdesk.com/wp-content/uploads/2023/12/hd-768x428.png 768w" sizes="(max-width: 1024px) 100vw, 1024px">
+    </div>
+</div>
+
+
+
+<div class="sixth-items">
+    <div class="sixth-img">
+        <img loading="lazy" decoding="async" width="500" height="250" src="https://www.faveohelpdesk.com/wp-content/uploads/2023/12/Resize-1.png" class="vc_single_image-img attachment-large" alt="Service desk" title="Resize 1" srcset="https://www.faveohelpdesk.com/wp-content/uploads/2023/12/Resize-1.png 1024w, https://www.faveohelpdesk.com/wp-content/uploads/2023/12/Resize-1-300x167.png 300w, https://www.faveohelpdesk.com/wp-content/uploads/2023/12/Resize-1-768x428.png 768w" sizes="(max-width: 1024px) 100vw, 1024px">
+    </div>
+    <div class="heading-bar">
+        <h3>EMPOWER, AUTOMATE, EXCEL</h3>
+        <h1>Faveo Service Desk</h1>
+        <h6>Ensure ITIL/ITSM compliance to keep your team organized and customer service on point. From seamless asset management to efficient ticketing, automation, and robust reporting, Faveo empowers your support teams to excel, delivering a superior customer experience. Elevate your support operations with Faveo Service Desk, where innovation meets efficiency.</h6>
+        <button class="read-more">Read more</button>
+    </div>
+</div>
+
+
+
+<div class="awards">
+    <h1>OUR AWARDS</h1>
+    <div class="slideshow-continer">
+        <div class="mySlides-fade">
+            <img class="img" loading="lazy" decoding="async" width="152" height="152" src="https://www.faveohelpdesk.com/wp-content/uploads/2023/10/Best-Support-2-1.png" class="attachment-large" alt="" title="Best-Support-2 (1)" srcset="https://www.faveohelpdesk.com/wp-content/uploads/2023/10/Best-Support-2-1.png 500w, https://www.faveohelpdesk.com/wp-content/uploads/2023/10/Best-Support-2-1-300x300.png 300w, https://www.faveohelpdesk.com/wp-content/uploads/2023/10/Best-Support-2-1-150x150.png 150w, https://www.faveohelpdesk.com/wp-content/uploads/2023/10/Best-Support-2-1-80x80.png 80w, https://www.faveohelpdesk.com/wp-content/uploads/2023/10/Best-Support-2-1-24x24.png 24w, https://www.faveohelpdesk.com/wp-content/uploads/2023/10/Best-Support-2-1-48x48.png 48w, https://www.faveohelpdesk.com/wp-content/uploads/2023/10/Best-Support-2-1-96x96.png 96w" sizes="(max-width: 500px) 100vw, 500px">
+            <img class="img" loading="lazy" decoding="async" width="152" height="152" src="https://www.faveohelpdesk.com/wp-content/uploads/2023/10/62190d0b58be357e022e3642_g2-2022-xs-1-1.png" class="attachment-large" alt="" title="62190d0b58be357e022e3642_g2-2022-xs-1 (1)" srcset="https://www.faveohelpdesk.com/wp-content/uploads/2023/10/62190d0b58be357e022e3642_g2-2022-xs-1-1.png 454w, https://www.faveohelpdesk.com/wp-content/uploads/2023/10/62190d0b58be357e022e3642_g2-2022-xs-1-1-275x300.png 275w" sizes="(max-width: 454px) 100vw, 454px">          
+            <img class="img" loading="lazy" decoding="async" width="152" height="152" src="https://www.faveohelpdesk.com/wp-content/uploads/2023/10/customer-choice-1.png" class="attachment-large" alt="" title="customer-choice-1" srcset="https://www.faveohelpdesk.com/wp-content/uploads/2023/10/customer-choice-1.png 500w, https://www.faveohelpdesk.com/wp-content/uploads/2023/10/customer-choice-1-300x300.png 300w, https://www.faveohelpdesk.com/wp-content/uploads/2023/10/customer-choice-1-150x150.png 150w, https://www.faveohelpdesk.com/wp-content/uploads/2023/10/customer-choice-1-80x80.png 80w, https://www.faveohelpdesk.com/wp-content/uploads/2023/10/customer-choice-1-24x24.png 24w, https://www.faveohelpdesk.com/wp-content/uploads/2023/10/customer-choice-1-48x48.png 48w, https://www.faveohelpdesk.com/wp-content/uploads/2023/10/customer-choice-1-96x96.png 96w" sizes="(max-width: 500px) 100vw, 500px">
+            <img class="img" loading="lazy" decoding="async" width="152" height="152" src="https://www.faveohelpdesk.com/wp-content/uploads/2023/10/Most-Affordable-DARK-2-1.png" class="attachment-large" alt="" title="Most-Affordable-DARK-2 (1)" srcset="https://www.faveohelpdesk.com/wp-content/uploads/2023/10/Most-Affordable-DARK-2-1.png 500w, https://www.faveohelpdesk.com/wp-content/uploads/2023/10/Most-Affordable-DARK-2-1-300x300.png 300w, https://www.faveohelpdesk.com/wp-content/uploads/2023/10/Most-Affordable-DARK-2-1-150x150.png 150w, https://www.faveohelpdesk.com/wp-content/uploads/2023/10/Most-Affordable-DARK-2-1-80x80.png 80w, https://www.faveohelpdesk.com/wp-content/uploads/2023/10/Most-Affordable-DARK-2-1-24x24.png 24w, https://www.faveohelpdesk.com/wp-content/uploads/2023/10/Most-Affordable-DARK-2-1-48x48.png 48w, https://www.faveohelpdesk.com/wp-content/uploads/2023/10/Most-Affordable-DARK-2-1-96x96.png 96w" sizes="(max-width: 500px) 100vw, 500px">
+            <img class="img" loading="lazy" decoding="async" width="152" height="152" src="https://www.faveohelpdesk.com/wp-content/uploads/2024/04/high-performer-2024.png" class="attachment-large" alt="high-performer-2024" title="high-performer-2024">            
+            <img class="img" loading="lazy" decoding="async" width="152" height="152" src="https://www.faveohelpdesk.com/wp-content/uploads/2023/11/CA_Badge_BestValue-1-1.png" class="attachment-large" alt="" title="CA_Badge_BestValue-1-1" srcset="https://www.faveohelpdesk.com/wp-content/uploads/2023/11/CA_Badge_BestValue-1-1.png 666w, https://www.faveohelpdesk.com/wp-content/uploads/2023/11/CA_Badge_BestValue-1-1-300x300.png 300w, https://www.faveohelpdesk.com/wp-content/uploads/2023/11/CA_Badge_BestValue-1-1-150x150.png 150w, https://www.faveohelpdesk.com/wp-content/uploads/2023/11/CA_Badge_BestValue-1-1-80x80.png 80w, https://www.faveohelpdesk.com/wp-content/uploads/2023/11/CA_Badge_BestValue-1-1-500x500.png 500w, https://www.faveohelpdesk.com/wp-content/uploads/2023/11/CA_Badge_BestValue-1-1-24x24.png 24w, https://www.faveohelpdesk.com/wp-content/uploads/2023/11/CA_Badge_BestValue-1-1-48x48.png 48w, https://www.faveohelpdesk.com/wp-content/uploads/2023/11/CA_Badge_BestValue-1-1-96x96.png 96w" sizes="(max-width: 666px) 100vw, 666px">
+            <img class="img" loading="lazy" decoding="async" width="152" height="152" src="https://www.faveohelpdesk.com/wp-content/uploads/2023/10/2023-award.png" class="attachment-large" alt="" title="2023-award" srcset="https://www.faveohelpdesk.com/wp-content/uploads/2023/10/2023-award.png 666w, https://www.faveohelpdesk.com/wp-content/uploads/2023/10/2023-award-300x300.png 300w, https://www.faveohelpdesk.com/wp-content/uploads/2023/10/2023-award-150x150.png 150w, https://www.faveohelpdesk.com/wp-content/uploads/2023/10/2023-award-80x80.png 80w, https://www.faveohelpdesk.com/wp-content/uploads/2023/10/2023-award-500x500.png 500w, https://www.faveohelpdesk.com/wp-content/uploads/2023/10/2023-award-24x24.png 24w, https://www.faveohelpdesk.com/wp-content/uploads/2023/10/2023-award-48x48.png 48w, https://www.faveohelpdesk.com/wp-content/uploads/2023/10/2023-award-96x96.png 96w" sizes="(max-width: 666px) 100vw, 666px">
+            <img class="img" loading="lazy" decoding="async" width="152" height="152" src="https://www.faveohelpdesk.com/wp-content/uploads/2023/10/Customers-Choice-2022-1-1024x1024.png" class="attachment-large" alt="" title="Customers-Choice-2022-1" srcset="https://www.faveohelpdesk.com/wp-content/uploads/2023/10/Customers-Choice-2022-1-1024x1024.png 1024w, https://www.faveohelpdesk.com/wp-content/uploads/2023/10/Customers-Choice-2022-1-300x300.png 300w, https://www.faveohelpdesk.com/wp-content/uploads/2023/10/Customers-Choice-2022-1-150x150.png 150w, https://www.faveohelpdesk.com/wp-content/uploads/2023/10/Customers-Choice-2022-1-768x768.png 768w, https://www.faveohelpdesk.com/wp-content/uploads/2023/10/Customers-Choice-2022-1-80x80.png 80w, https://www.faveohelpdesk.com/wp-content/uploads/2023/10/Customers-Choice-2022-1-500x500.png 500w, https://www.faveohelpdesk.com/wp-content/uploads/2023/10/Customers-Choice-2022-1-1000x1000.png 1000w, https://www.faveohelpdesk.com/wp-content/uploads/2023/10/Customers-Choice-2022-1-24x24.png 24w, https://www.faveohelpdesk.com/wp-content/uploads/2023/10/Customers-Choice-2022-1-48x48.png 48w, https://www.faveohelpdesk.com/wp-content/uploads/2023/10/Customers-Choice-2022-1-96x96.png 96w, https://www.faveohelpdesk.com/wp-content/uploads/2023/10/Customers-Choice-2022-1.png 1080w" sizes="(max-width: 1024px) 100vw, 1024px">
+        </div>
+    </div>
+    
+</div>
+<!-- <script>
+    let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script> -->
+
+
+
+
+<div class="customer">
+    <h1>WHY OUR CUSTOMER CHOOSE US</h1>
+    <div class="testimonial-slide">
+    <h4>"Experience is awesome not because Faveo is well designed and developed software , but also because the commitment and dedication of the guys. I am happy because of not a software is only as good as the people behind it , keep up the good work!"</h4>
+    <h5>-Charles, MD of Puntacana Resort & Club</h5>
+    </div>
+   
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span>
+    </div>
+</div>
+
+
+<div class="news">
+    <h1>LATEST BLOGS</h1>
+</div>
+
+
+<div class="blogs">
+    <button id="prevBtn"> ❮ </button>
+    <div class="slider-container">
+        <div class="slider" id="slider">
+            <div class="slide">
+                <img src="https://www.faveohelpdesk.com/wp-content/uploads/2024/06/June-Blog-banner-2024-02-01-2-600x400.png" alt="Image 1" style="width: 280px; height: 220px;">
+                <h4>Track Customer Tickets With Faveo Ticketing System</h4>
+                <h6>When you start working in customer support you will begin to notice that many a time customers ask the same...</h6>
+                <h5>June 25, 2024</h5>
+            </div>
+            <div class="slide">
+                <img src="https://www.faveohelpdesk.com/wp-content/uploads/2024/06/June-Blog-banner-2024-01-600x400.jpg"  alt="Image 2" style="width: 280px; height: 220px;">
+                <h4>15 Reasons Why Your Business Needs Ticketing System</h4>
+                <h6>In today's fast-paced business environment, a growing business needs dedicated software to efficiently handle customer queries and complaints. A ticketing...</h6>
+                <h5>June 20, 2024</h5>
+            </div>
+            <div class="slide">
+                <img src="https://www.faveohelpdesk.com/wp-content/uploads/2024/05/May-Blog-Banner-2024-01-600x400.png" alt="Image 3" style="width: 280px; height: 220px;">
+                <h4>From Surveys to Action: Utilizing Feedback to Drive Customer Engagement</h4>
+                <h6>Going through a huge pile of survey responses can be taxing and daunting. Leaving you to ponder what works and...</h6>
+                <h5>May 8, 2024</h5>
+            </div>
+            <div class="slide">
+                <img src="https://www.faveohelpdesk.com/wp-content/uploads/2024/08/August-Blog-banner-2024-01-600x400.png"  alt="Image 4" style="width: 280px; height: 220px;">
+                <h4>AR/VR: Transforming the Customer Service Landscape – A Practical Approach</h4>
+                <h6>Technology is playing an important role in reshaping our interactions with the world. Among these revolutionary innovations, augmented reality (AR)...</h6>
+                <h5>AUGUST 6, 2024</h5>
+            </div>
+            <div class="slide">
+                <img src="https://www.faveohelpdesk.com/wp-content/uploads/2024/08/Sustainability-in-Tech-600x400.png" alt="Image 5" style="width: 280px; height: 220px;">
+                <h4>"Elevating Efficiency And Embracing Sustainability: A Verdant Approach To Customer Service Operation"</h4>
+                <h6>Many enterprises are continuously striving too achieve sustainability initiatives, and some of them have made considerable developments among their competitors...</h6>
+                <h5>AUGUST 6, 2024</h5>
+            </div>
+            <div class="slide">
+                <img src="https://www.faveohelpdesk.com/wp-content/uploads/2024/06/June-Blog-banner-2024-03-01-600x400.png"  alt="Image 6" style="width: 280px; height: 220px;">
+                <h4>"The Helpdesk Goes Multilingual: Machine Translation For Global Support" </h4>
+                <h6>As the world becomes more connected, the need for business to expand thier reach across cultures and borders has become...</h6>
+                <h5>JULY 1, 2024</h5>
+            </div>
+        </div>
+        
+    </div>
+    <button id="nextBtn"> ❯ </button>
+    </div>
+
+</div>
+<script src="script.js">
+            
+</script>
+
+
+<div class="last-items">
+    <div class="last-img">
+        <img loading="lazy" decoding="async" width="300" height="300" src="https://www.faveohelpdesk.com/wp-content/uploads/2023/10/3969587-removebg-preview-300x300.png" class="vc_single_image-img attachment-medium" alt="" title="3969587-removebg-preview" srcset="https://www.faveohelpdesk.com/wp-content/uploads/2023/10/3969587-removebg-preview-300x300.png 300w, https://www.faveohelpdesk.com/wp-content/uploads/2023/10/3969587-removebg-preview-150x150.png 150w, https://www.faveohelpdesk.com/wp-content/uploads/2023/10/3969587-removebg-preview-80x80.png 80w, https://www.faveohelpdesk.com/wp-content/uploads/2023/10/3969587-removebg-preview-24x24.png 24w, https://www.faveohelpdesk.com/wp-content/uploads/2023/10/3969587-removebg-preview-48x48.png 48w, https://www.faveohelpdesk.com/wp-content/uploads/2023/10/3969587-removebg-preview-96x96.png 96w, https://www.faveohelpdesk.com/wp-content/uploads/2023/10/3969587-removebg-preview.png 500w" sizes="(max-width: 300px) 100vw, 300px">
+    </div>
+    <div class="experience">
+        <h1>ELEVATE YOUR SUPPORT EXPERIENCE</h1>
+        <h4>With Faveo Helpdesk’s cutting-edge cloud-based platform, you can enhance your customer support experience and optimize your team’s productivity. Signup for a free cloud version and experience the difference.</h4>
+        <button class="sign-up">Sign Up For Free</button>
+    </div>
+</div>
+
+
+
+</body>
+</html>
